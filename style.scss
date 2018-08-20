@@ -1,7 +1,30 @@
 $bg: #f2f2f2;
 $ff: 'arial';
+$ta: 'center';
+
+//partial imports
+@import 'colors';
+
+//mixims
+@import 'mixin';
 
 body {
     background: $bg;
     font-family: $ff;
+}
+
+h1 {
+    text-align: center;
+}
+
+#box {
+    background: red;
+    @include border-radius(5px);
+    height: 200px;
+    width: 1200px;
+
+}
+
+ul li {
+    padding: 10px;
 }
